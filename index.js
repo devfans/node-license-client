@@ -29,7 +29,7 @@ class LicenseClient {
     }
   }
 
-  _constructor (options) {
+  _constructor (options={}) {
     logger = options.logger || console
     if (options.certHex) this.PublicKey = Buffer.from(options.certHex, 'hex').toString()
     if (options.pemPath) this.PublicKey = fs.readFileSync(options.pemPath).toString()
@@ -89,7 +89,7 @@ class LicenseClient {
     const licenseKey = fs.readFileSync(this.keyFilePath).toString().replace('\n', '')
 
     // get machine id
-    const machineId = MD.get().digest
+    const machineId = md.get().digest
 
     // load license from somewhere
     let _license
@@ -118,7 +118,7 @@ class LicenseClient {
     } else throw Error('invalid license')
   }
 
-  async verify() {
+  verify() {
     return this.checkLicense()
   }
 
