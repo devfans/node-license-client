@@ -1,0 +1,43 @@
+{
+  "name": "node-license-client",
+  "version": "0.0.1",
+  "description": "client module for node-license-server",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --plugin markdown --ext js,md .",
+    "test": "mocha --check-leaks --bail --no-exit --reporter spec test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --no-exit --reporter dot test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --no-exit --reporter spec test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devfans/node-license-client.git"
+  },
+  "keywords": [
+    "license",
+    "server",
+    "node",
+    "software",
+    "licensing",
+    "permission",
+    "client"
+  ],
+  "author": "stefanliu@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devfans/node-license-client/issues"
+  },
+  "devDependencies": {
+    "after": "0.8.2",
+    "eslint": "3.19.0",
+    "eslint-plugin-markdown": "1.0.0-beta.6",
+    "istanbul": "1.0.0-alpha.2",
+    "mocha": "2.5.3",
+    "supertest": "1.1.0"
+  },
+  "homepage": "https://github.com/devfans/node-license-client#readme",
+  "dependencies": {
+    "machine-digest": "0.0.4",
+    "node-fetch": "^2.1.2"
+  }
+}
