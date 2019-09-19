@@ -1,4 +1,7 @@
 # node-license-client
+
+[![Join the chat at https://gitter.im/devfans/node-license-client](https://badges.gitter.im/devfans/node-license-client.svg)](https://gitter.im/devfans/node-license-client?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status][travis-image]][travis-url]
